@@ -17,6 +17,9 @@ public class WeatherRequestLog {
     private String postalCode;
     private String user;
     private LocalDateTime timestamp;
+    private String temperature;
+    private String humidity;
+    private String weatherCondition;
 
     public Long getId() {
         return id;
@@ -48,5 +51,29 @@ public class WeatherRequestLog {
 
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
+    }
+
+    public String getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(String humidity) {
+        this.humidity = humidity;
+    }
+
+    public String getWeatherCondition() {
+        return weatherCondition;
+    }
+
+    public void setWeatherCondition(String weatherCondition) {
+        this.weatherCondition = weatherCondition;
     }
 }
